@@ -8,6 +8,8 @@ body {
 	font-size: 150%;
 	line-height: 1.3;
 	color: #f6e6cc;
+	width: 600px;
+	margin: auto;
 	background: #27221a url("../img/bg-body.gif");
 	position: relative;
 	padding: 0 30px;
