@@ -31,17 +31,7 @@ button, label, select, option, input[type=submit] { cursor: pointer; }
 sup { font-size: 80%; line-height: 1; vertical-align: super; }
 button::-moz-focus-inner { border: 0; padding: 1px; }
 span.amp { font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif; font-weight: normal; font-style: italic; font-size: 1.2em; line-height: 0.8; }
-
-h1,h2,h3,h4,h5,h6 { 
-    line-height: 1.1; 
-    font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
-}
-
-h2 { font-size: 22pt; }
-h3 { font-size: 20pt; }
-h4 { font-size: 18pt; }
-h5 { font-size: 16pt; }
-h6 { font-size: 14pt; }
+h1,h2,h3,h4,h5,h6 { line-height: 1.1; }
 
 ::selection { background: #745626; }
 ::-moz-selection { background: #745626; }
@@ -51,6 +41,7 @@ h1 {
 	margin: 0 0 0.1em;
 	font-family: Baskerville, "Goudy Old Style", "Palatino", "Book Antiqua", serif;
 	font-weight: normal;
+	text-shadow: 1px 1px 10px rgba(0,0,0,0.25);
 }
 
 h1 a,
