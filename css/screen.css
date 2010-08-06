@@ -65,4 +65,8 @@ pre code {
 	font-size: 10pt;
 }
 
-.thumb { float:left; }
+.thumb { 
+    float:left;
+    margin: 3px;
+
+}
