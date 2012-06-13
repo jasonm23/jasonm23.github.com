@@ -1,69 +1,314 @@
 <html>
   <head>
-    <title>Jason's sandpit</title>
-    <link href="http://jasonm23.ruhoh.com/_templates/themes/twitter/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <title>Jason's emacs sandpit</title>
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style type="text/css" media="screen">
+      .picture {
+      border-radius: 10px; 
+      border: 5px solid white;
+      background-color: white;
+      margin: 5px;
+      text-align: center;
+      }
+      .thumb { 
+      }
+      .caption-download {
+      background-color: #272b30;
+      color: #fff;
+      border-radius: 3px;
+      padding: 5px;
+      margin:auto;
+      width: 190px;
+      font-size: 11px;
+      }
+    </style>
     <link rel="stylesheet" href="./css/lightbox.css" type="text/css" media="screen" />
     <script type="text/javascript" src=" http://ajax.googleapis.com/ajax/libs/prototype/1.6.1.0/prototype.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js"></script>
     <script type="text/javascript" src="js/lightbox.js"></script>
   </head>
   <body>
-  
-      <div class="navbar">
+    
+    <div class="navbar">
       <div class="navbar-inner">
         <div class="container">
-          <a class="brand" href="/">A few possibly useful things...</a>
+          <a class="brand" href="/">A few possibly useful things for emacs...</a>
           <ul class="nav">
-            <li> <a href="#emacs-icons">Emacs Icons</a>
+            <li> <a href="#emacs-icons">Icons</a>
+            <li> <a href="#emacs-theme-editor">Color Theme Editor</a>
+            <li> <a href="#emacs-themes">Color Themes</a>
           </ul>
         </div>
       </div>
     </div>
     
     <div class="container">
-      <div id="content">
-        <section>
-        <h2 name="emacs-icons">Replacement icons for Emacs</h2>
-        <p><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon1.png" alt="EmacsIcon1"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon2.png" alt="EmacsIcon2"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon3.png" alt="EmacsIcon3"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon4.png" alt="EmacsIcon4"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon5.png" alt="EmacsIcon5"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon6.png" alt="EmacsIcon6"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon7.png" alt="EmacsIcon7"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon8.png" alt="EmacsIcon8"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon9.png" alt="EmacsIcon9"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-blue-deep.png" alt="emacs-card-blue-deep"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-british-racing-green.png" alt="emacs-card-british-racing-green"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-carmine.png" alt="emacs-card-carmine"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-green.png" alt="emacs-card-green"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-interlock-v1.png" alt="Emacs interlock primitives"> <img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-interlock-v2.png" alt="Emacs interlock primitives"></p>
-        <h3><a href="http://github.com/jasonm23/emacs-icons-project/">Find the icons project here.</a></h3>
-        <section/>
-        <section>
-        <a href="./emacs-theme-editor/"><h2 name="emacs-theme-editor">Emacs Color Theme Editor</h2>
-          <p><img src="https://github.com/jasonm23/jasonm23.ruhoh.com/raw/master/_media/emacs-theme-editor.png"/></p>
-        </a>      
-        <p>An Emacs theme editor, with the ability to edit an existing color-theme.</p>
-        <p><small>This is based on original work by Alex Pogosyan which is no longer online.</small></p>
-        </section>
-        <section>
-        <h2 name="emacs-themes">A Few Sample Themes...</h2>
-        <p><a href="./emacs-theme-editor/">Emacs Color Theme Editor</a></p>
-        <p>Click a theme name to download it's emacs-lisp file</p>
+      <div id="content" class="span8">
         <div>
-          <div class="pull-left"><div class="picture"><a href="./themes/colGor-theme-amber.png"                  rel="lightbox[emacsthemes]" title="color-theme-amber              "><img src="./themes/color-theme-amber.thumb.png" />                </a></div><a title="color-theme-amber               "  href="./themes/color-theme-amber.el">            <p class="caption-download"> color-theme-amber              </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-aquamarina-762835.png"      rel="lightbox[emacsthemes]" title="color-theme-aquamarina-762835  "><img src="./themes/color-theme-aquamarina-762835.thumb.png" />    </a></div><a title="color-theme-aquamarina-762835  "  href="./themes/color-theme-aquamarina-762835.el"> <p class="caption-download"> color-theme-aquamarina-762835  </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-autummmn-677293.png"        rel="lightbox[emacsthemes]" title="color-theme-autummmn-677293    "><img src="./themes/color-theme-autummmn-677293.thumb.png" />      </a></div><a title="color-theme-autummmn-677293    "  href="./themes/color-theme-autummmn-677293.el">   <p class="caption-download"> color-theme-autummmn-677293    </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-cactus.png"                 rel="lightbox[emacsthemes]" title="color-theme-cactus             "><img src="./themes/color-theme-cactus.thumb.png" />               </a></div><a title="color-theme-cactus              "  href="./themes/color-theme-cactus.el">           <p class="caption-download"> color-theme-cactus             </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-carnivale-854847.png"       rel="lightbox[emacsthemes]" title="color-theme-carnivale-854847   "><img src="./themes/color-theme-carnivale-854847.thumb.png" />     </a></div><a title="color-theme-carnivale-854847   "  href="./themes/color-theme-carnivale-854847.el">  <p class="caption-download"> color-theme-carnivale-854847   </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-coolingtower-812522.png"    rel="lightbox[emacsthemes]" title="color-theme-coolingtower-812522"><img src="./themes/color-theme-coolingtower-812522.thumb.png" />  </a></div><a title="color-theme-coolingtower-812522"  href="./themes/color-theme-coolingtower-812522.el"><p class="caption-download"> color-theme-coolingtower-812522</p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-grassyknoll-788556.png"     rel="lightbox[emacsthemes]" title="color-theme-grassyknoll-788556 "><img src="./themes/color-theme-grassyknoll-788556.thumb.png" />   </a></div><a title="color-theme-grassyknoll-788556 "  href="./themes/color-theme-grassyknoll-788556.el"> <p class="caption-download"> color-theme-grassyknoll-788556 </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-greenlcd.png"               rel="lightbox[emacsthemes]" title="color-theme-greenlcd           "><img src="./themes/color-theme-greenlcd.thumb.png" />             </a></div><a title="color-theme-greenlcd            "  href="./themes/color-theme-greenlcd.el">         <p class="caption-download"> color-theme-greenlcd           </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-hihat.png"                  rel="lightbox[emacsthemes]" title="color-theme-hihat              "><img src="./themes/color-theme-hihat.thumb.png" />                </a></div><a title="color-theme-hihat               "  href="./themes/color-theme-hihat.el">            <p class="caption-download"> color-theme-hihat              </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-ice-cream-sundae.png"       rel="lightbox[emacsthemes]" title="color-theme-ice-cream-sundae   "><img src="./themes/color-theme-ice-cream-sundae.thumb.png" />     </a></div><a title="color-theme-ice-cream-sundae   "  href="./themes/color-theme-ice-cream-sundae.el">  <p class="caption-download"> color-theme-ice-cream-sundae   </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-jadedragon-660650.png"      rel="lightbox[emacsthemes]" title="color-theme-jadedragon-660650  "><img src="./themes/color-theme-jadedragon-660650.thumb.png" />    </a></div><a title="color-theme-jadedragon-660650  "  href="./themes/color-theme-jadedragon-660650.el"> <p class="caption-download"> color-theme-jadedragon-660650  </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-lovely-725059.png"          rel="lightbox[emacsthemes]" title="color-theme-lovely-725059      "><img src="./themes/color-theme-lovely-725059.thumb.png" />        </a></div><a title="color-theme-lovely-725059       "  href="./themes/color-theme-lovely-725059.el">    <p class="caption-download"> color-theme-lovely-725059      </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-marshland-846163.png"       rel="lightbox[emacsthemes]" title="color-theme-marshland-846163   "><img src="./themes/color-theme-marshland-846163.thumb.png" />     </a></div><a title="color-theme-marshland-846163   "  href="./themes/color-theme-marshland-846163.el">  <p class="caption-download"> color-theme-marshland-846163   </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-militia-936329.png"         rel="lightbox[emacsthemes]" title="color-theme-militia-936329     "><img src="./themes/color-theme-militia-936329.thumb.png" />       </a></div><a title="color-theme-militia-936329      "  href="./themes/color-theme-militia-936329.el">   <p class="caption-download"> color-theme-militia-936329     </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-mossysparks-825884.png"     rel="lightbox[emacsthemes]" title="color-theme-mossysparks-825884 "><img src="./themes/color-theme-mossysparks-825884.thumb.png" />   </a></div><a title="color-theme-mossysparks-825884 "  href="./themes/color-theme-mossysparks-825884.el"> <p class="caption-download"> color-theme-mossysparks-825884 </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-smoothy-786597.png"         rel="lightbox[emacsthemes]" title="color-theme-smoothy-786597     "><img src="./themes/color-theme-smoothy-786597.thumb.png" />       </a></div><a title="color-theme-smoothy-786597      "  href="./themes/color-theme-smoothy-786597.el">   <p class="caption-download"> color-theme-smoothy-786597     </p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-verdantparty-794284.png"    rel="lightbox[emacsthemes]" title="color-theme-verdantparty-794284"><img src="./themes/color-theme-verdantparty-794284.thumb.png" />  </a></div><a title="color-theme-verdantparty-794284"  href="./themes/color-theme-verdantparty-794284.el"><p class="caption-download"> color-theme-verdantparty-794284</p></a></div>
-          <div class="pull-left"><div class="picture"><a href="./themes/color-theme-wholegrain-807102.png"      rel="lightbox[emacsthemes]" title="color-theme-wholegrain-807102  "><img src="./themes/color-theme-wholegrain-807102.thumb.png" />    </a></div><a title="color-theme-wholegrain-807102  "  href="./themes/color-theme-wholegrain-807102.el"> <p class="caption-download"> color-theme-wholegrain-807102  </p></a></div>
+          <h1 style="font-size:34pt;">in here you will find a few possibly useful things for emacs...</h1>
         </div>
-        <div style="clear:both"/>
-        </section>
+        <hr/>
+        <div>
+          <a name="emacs-icons"/>
+          <div class="well">
+            <h1>Replacement icons for Emacs</h1>
+            <h3>Circles</h3>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon6.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon6.png" alt="EmacsIcon6"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon2.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon2.png" alt="EmacsIcon2"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon3.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon3.png" alt="EmacsIcon3"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon4.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon4.png" alt="EmacsIcon4"/></a></span>
+            <h3>Rounded boxes</h3>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon1.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon1.png" alt="EmacsIcon1"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon5.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon5.png" alt="EmacsIcon5"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon7.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon7.png" alt="EmacsIcon7"/></a></span>
+            <h3>Playing cards</h3>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon8.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon8.png" alt="EmacsIcon8"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/EmacsIcon9.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/EmacsIcon9.png" alt="EmacsIcon9"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/emacs-card-blue-deep.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-blue-deep.png" alt="emacs-card-blue-deep"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/emacs-card-british-racing-green.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-british-racing-green.png" alt="emacs-card-british-racing-green"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/emacs-card-carmine.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-carmine.png" alt="emacs-card-carmine"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/blob/master/emacs-card-green.icns?raw=true"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-card-green.png" alt="emacs-card-green"/></a></span>
+            <hr />
+            <p>And if you want to build your own with the core motif, some PNGs...</p>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/raw/master/emacs-interlock-v1.png"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-interlock-v1.png" alt="Emacs interlock primitives"/></a></span>
+            <span class="emacs-icon-thumb"><a href="https://github.com/jasonm23/emacs-icons-project/raw/master/emacs-interlock-v2.png"><img src="https://github.com/jasonm23/emacs-icons-project/raw/master/thumb/emacs-interlock-v2.png" alt="Emacs interlock primitives"/></a></span>
+            <div style="clear:both">
+            <hr/>
+            <h3>Info...</h3>
+            <p>Click a thumbnail to download an icon in <code>OS X .icns format</code></p>
+            <p>You can find large (512px square) png's at the <a href="http://github.com/jasonm23/emacs-icons-project/">Emacs icons project here.</a></p>
+            <p>To generate icons for most platforms you can use the free online tool at: <a href="http://iconverticons.com/">http://iconverticons.com/</a></p>
+          </div>
+        </div>
+        <hr/>
+        <div class="well">
+          <a name="emacs-theme-editor"/>
+          <h1>Emacs Color Theme Editor</h1>
+          <hr/>
+          <a href="./emacs-theme-editor/">
+            <p>
+              <img src="https://github.com/jasonm23/jasonm23.ruhoh.com/raw/master/_media/emacs-theme-editor.png"/></p>
+          </a>      
+          <p>An Emacs theme editor, with the ability to edit an existing color-theme.</p>
+          <p><small>This is based on original work by Alex Pogosyan which is no longer online.</small></p>
+        </div>
+        <hr/>
+        <div class="well">
+          <a name="emacs-themes"/>
+          <h2>A Few Sample Themes...</h2>
+          <p><a href="./emacs-theme-editor/">Emacs Color Theme Editor</a></p>
+          <p>Click a theme's caption to download it <i>(*emacs-lisp file)</i></p>
+          <div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/colGor-theme-amber.png" rel="lightbox[emacsthemes]" title="color-theme-amber">
+                  <img class="thumb" src="./themes/color-theme-amber.thumb.png" />                
+                </a>
+                <a title="color-theme-amber"  href="./themes/color-theme-amber.el">            
+                  <p class="caption-download">color-theme-amber <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-aquamarina-762835.png" rel="lightbox[emacsthemes]" title="color-theme-aquamarina-762835">
+                  <img class="thumb" src="./themes/color-theme-aquamarina-762835.thumb.png" />    
+                </a>
+                <a title="color-theme-aquamarina-762835"  href="./themes/color-theme-aquamarina-762835.el"> 
+                  <p class="caption-download">color-theme-aquamarina-762835 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-autummmn-677293.png" rel="lightbox[emacsthemes]" title="color-theme-autummmn-677293">
+                  <img class="thumb" src="./themes/color-theme-autummmn-677293.thumb.png" />      
+                </a>
+                <a title="color-theme-autummmn-677293"  href="./themes/color-theme-autummmn-677293.el">
+                  <p class="caption-download">color-theme-autummmn-677293<span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-cactus.png" rel="lightbox[emacsthemes]" title="color-theme-cactus">
+                  <img class="thumb" src="./themes/color-theme-cactus.thumb.png" />               
+                </a>
+                <a title="color-theme-cactus"  href="./themes/color-theme-cactus.el">           
+                  <p class="caption-download">color-theme-cactus <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-carnivale-854847.png" rel="lightbox[emacsthemes]" title="color-theme-carnivale-854847">
+                  <img class="thumb" src="./themes/color-theme-carnivale-854847.thumb.png" />     
+                </a>
+                <a title="color-theme-carnivale-854847"  href="./themes/color-theme-carnivale-854847.el">  
+                  <p class="caption-download"> color-theme-carnivale-854847   <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-coolingtower-812522.png" rel="lightbox[emacsthemes]" title="color-theme-coolingtower-812522">
+                  <img class="thumb" src="./themes/color-theme-coolingtower-812522.thumb.png" />  
+                </a>
+                <a title="color-theme-coolingtower-812522"  href="./themes/color-theme-coolingtower-812522.el">
+                  <p class="caption-download"> color-theme-coolingtower-812522 <span class="icon-download icon-white "/> </p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-grassyknoll-788556.png" rel="lightbox[emacsthemes]" title="color-theme-grassyknoll-788556">
+                  <img class="thumb" src="./themes/color-theme-grassyknoll-788556.thumb.png" />   
+                </a>
+                <a title="color-theme-grassyknoll-788556"  href="./themes/color-theme-grassyknoll-788556.el"> 
+                  <p class="caption-download"> color-theme-grassyknoll-788556 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-greenlcd.png" rel="lightbox[emacsthemes]" title="color-theme-greenlcd">
+                  <img class="thumb" src="./themes/color-theme-greenlcd.thumb.png" />             
+                </a>
+                <a title="color-theme-greenlcd"  href="./themes/color-theme-greenlcd.el">         
+                  <p class="caption-download"> color-theme-greenlcd <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-hihat.png" rel="lightbox[emacsthemes]" title="color-theme-hihat">
+                  <img class="thumb" src="./themes/color-theme-hihat.thumb.png" />                
+                </a>
+                <a title="color-theme-hihat"  href="./themes/color-theme-hihat.el">            
+                  <p class="caption-download"> color-theme-hihat <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-ice-cream-sundae.png" rel="lightbox[emacsthemes]" title="color-theme-ice-cream-sundae">
+                  <img class="thumb" src="./themes/color-theme-ice-cream-sundae.thumb.png" />     
+                </a>
+                <a title="color-theme-ice-cream-sundae"  href="./themes/color-theme-ice-cream-sundae.el">  
+                  <p class="caption-download"> color-theme-ice-cream-sundae <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-jadedragon-660650.png" rel="lightbox[emacsthemes]" title="color-theme-jadedragon-660650">
+                  <img class="thumb" src="./themes/color-theme-jadedragon-660650.thumb.png" />    
+                </a>
+                <a title="color-theme-jadedragon-660650"  href="./themes/color-theme-jadedragon-660650.el"> 
+                  <p class="caption-download"> color-theme-jadedragon-660650 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-lovely-725059.png" rel="lightbox[emacsthemes]" title="color-theme-lovely-725059">
+                  <img class="thumb" src="./themes/color-theme-lovely-725059.thumb.png" />        
+                </a>
+                <a title="color-theme-lovely-725059"  href="./themes/color-theme-lovely-725059.el">    
+                  <p class="caption-download"> color-theme-lovely-725059 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-marshland-846163.png" rel="lightbox[emacsthemes]" title="color-theme-marshland-846163">
+                  <img class="thumb" src="./themes/color-theme-marshland-846163.thumb.png" />     
+                </a>
+                <a title="color-theme-marshland-846163"  href="./themes/color-theme-marshland-846163.el">  
+                  <p class="caption-download"> color-theme-marshland-846163 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-militia-936329.png" rel="lightbox[emacsthemes]" title="color-theme-militia-936329">
+                  <img class="thumb" src="./themes/color-theme-militia-936329.thumb.png" />       
+                </a>
+                <a title="color-theme-militia-936329"  href="./themes/color-theme-militia-936329.el">   
+                  <p class="caption-download"> color-theme-militia-936329 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-mossysparks-825884.png" rel="lightbox[emacsthemes]" title="color-theme-mossysparks-825884">
+                  <img class="thumb" src="./themes/color-theme-mossysparks-825884.thumb.png" />   
+                </a>
+                <a title="color-theme-mossysparks-825884"  href="./themes/color-theme-mossysparks-825884.el"> 
+                  <p class="caption-download"> color-theme-mossysparks-825884 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-smoothy-786597.png" rel="lightbox[emacsthemes]" title="color-theme-smoothy-786597">
+                  <img class="thumb" src="./themes/color-theme-smoothy-786597.thumb.png" />       
+                </a>
+                <a title="color-theme-smoothy-786597"  href="./themes/color-theme-smoothy-786597.el">   
+                  <p class="caption-download"> color-theme-smoothy-786597 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-verdantparty-794284.png" rel="lightbox[emacsthemes]" title="color-theme-verdantparty-794284">
+                  <img class="thumb" src="./themes/color-theme-verdantparty-794284.thumb.png" />  
+                </a>
+                <a title="color-theme-verdantparty-794284"  href="./themes/color-theme-verdantparty-794284.el">
+                  <p class="caption-download"> color-theme-verdantparty-794284 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+            <div class="pull-left">
+              <div class="picture">
+                <a href="./themes/color-theme-wholegrain-807102.png" rel="lightbox[emacsthemes]" title="color-theme-wholegrain-807102">
+                  <img class="thumb" src="./themes/color-theme-wholegrain-807102.thumb.png" />    
+                </a>
+                <a title="color-theme-wholegrain-807102"  href="./themes/color-theme-wholegrain-807102.el"> 
+                  <p class="caption-download"> color-theme-wholegrain-807102 <span class="icon-download icon-white "/></p>
+                </a>
+              </div>
+            </div>
+            
+          </div>
+          <div style="clear:both"/>
+        </div>
+        
       </div>     
     </div>
     <div id="footer">
-      <p><small>enjoy</small></p>
+      <p>
+        <hr/>
+        <small style="font-size:10px">enjoy it... all stuff CCA creative commons share-alike non-com attribution 2010-2012 (cc) Jason Milkins</small>
+      </p>
     </div>
   </body>
 </html>
