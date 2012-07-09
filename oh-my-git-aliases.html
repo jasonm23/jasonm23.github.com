@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link class="jsbin" href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css" />
+<link class="jsbin" href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
+<script class="jsbin" src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+<script class="jsbin" src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js"></script>
+<meta charset=utf-8 />
+<title>JS Bin</title>
+<!--[if IE]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<style>
+  article, aside, figure, footer, header, hgroup, 
+  menu, nav, section { display: block; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Oh-My-Zsh git aliases</h1>
+<p>enable (git) plugin.</p>
+<table class='table'>
+  <tr>
+    <td class='span3'>
+      <strong>g</strong>
+    </td>
+    <td>
+      <pre>git</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gst</strong>
+    </td>
+    <td>
+      <pre>git status</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gl</strong>
+    </td>
+    <td>
+      <pre>git pull</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gup</strong>
+    </td>
+    <td>
+      <pre>git fetch && git rebase</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gp</strong>
+    </td>
+    <td>
+      <pre>git push</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gc</strong>
+    </td>
+    <td>
+      <pre>git commit -v</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gca</strong>
+    </td>
+    <td>
+      <pre>git commit -v -a</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gco</strong>
+    </td>
+    <td>
+      <pre>git checkout</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gcm</strong>
+    </td>
+    <td>
+      <pre>git checkout master</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gb</strong>
+    </td>
+    <td>
+      <pre>git branch</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gba</strong>
+    </td>
+    <td>
+      <pre>git branch -a</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gcount</strong>
+    </td>
+    <td>
+      <pre>git shortlog -sn</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gcp</strong>
+    </td>
+    <td>
+      <pre>git cherry-pick</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>glg</strong>
+    </td>
+    <td>
+      <pre>git log --stat --max-count=5</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>glgg</strong>
+    </td>
+    <td>
+      <pre>git log --graph --max-count=5</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gss</strong>
+    </td>
+    <td>
+      <pre>git status -s</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>ga</strong>
+    </td>
+    <td>
+      <pre>git add</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gm</strong>
+    </td>
+    <td>
+      <pre>git merge</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>grh</strong>
+    </td>
+    <td>
+      <pre>git reset HEAD</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>grhh</strong>
+    </td>
+    <td>
+      <pre>git reset HEAD --hard</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gsr</strong>
+    </td>
+    <td>
+      <pre>git svn rebase</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gsd</strong>
+    </td>
+    <td>
+      <pre>git svn dcommit</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>git-svn-dcommit-push</strong>
+    </td>
+    <td>
+      <pre>git svn dcommit && git push github master:svntrunk</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gdv</strong>
+    </td>
+    <td>
+      <pre>git diff -w "$@" | view -</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>gpa</strong>
+    </td>
+    <td>
+      <pre>git add .; git commit -m "$1"; git push; # only in the ocodo fork.</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>ggpull</strong>
+    </td>
+    <td>
+      <pre>git pull origin $(current_branch)</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>ggpush</strong>
+    </td>
+    <td>
+      <pre>git push origin $(current_branch)</pre>
+    </td>
+  </tr>
+  <tr>
+    <td class='span3'>
+      <strong>ggpnp</strong>
+    </td>
+    <td>
+      <pre>git pull origin $(current_branch) && git push origin $(current_branch)</pre>
+    </td>
+  </tr>
+</table>
+</div>
+</body>
+</html>
