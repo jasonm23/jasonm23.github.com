@@ -1,0 +1,143 @@
+!!!5
+%html
+  %head
+    %link(href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css" rel="stylesheet" type="text/css")
+    %link(href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css" rel="stylesheet" type="text/css")
+    %script(src="http://code.jquery.com/jquery-1.7.2.min.js")
+    %script(src="http://twitter.github.com/bootstrap/assets/js/bootstrap.js")
+    :css
+      article, aside, figure, footer, header, hgroup, 
+      menu, nav, section { display: block; }
+  %body
+    .container
+      %h1 Oh-My-Zsh Git Aliases
+      %p enable (git) plugin.
+      %table.table
+        %tr
+          %td.span2
+            %strong g
+          %td
+            %code git
+          %td.span2
+            %strong gst                  
+          %td
+            %code git status
+        %tr
+          %td.span2
+            %strong gl                   
+          %td
+            %code git pull
+          %td.span2
+            %strong gup                  
+          %td
+            %code git fetch && git rebase
+        %tr
+          %td.span2
+            %strong gp                   
+          %td
+            %code git push
+          %td.span2
+            %strong gc                   
+          %td
+            %code git commit -v
+        %tr
+          %td.span2
+            %strong gca                  
+          %td
+            %code git commit -v -a
+          %td.span2
+            %strong gco                  
+          %td
+            %code git checkout
+        %tr
+          %td.span2
+            %strong gcm                  
+          %td
+            %code git checkout master
+          %td.span2
+            %strong gb                   
+          %td
+            %code git branch
+        %tr
+          %td.span2
+            %strong gba                  
+          %td
+            %code git branch -a
+          %td.span2
+            %strong gcount               
+          %td
+            %code git shortlog -sn
+        %tr
+          %td.span2
+            %strong gcp                  
+          %td
+            %code git cherry-pick
+          %td.span2
+            %strong glg                  
+          %td
+            %code git log --stat --max-count=5
+        %tr
+          %td.span2
+            %strong glgg                 
+          %td
+            %code git log --graph --max-count=5
+          %td.span2
+            %strong gss                  
+          %td
+            %code git status -s
+        %tr
+          %td.span2
+            %strong ga                   
+          %td
+            %code git add
+          %td.span2
+            %strong gm                   
+          %td
+            %code git merge
+        %tr
+          %td.span2
+            %strong grh                  
+          %td
+            %code git reset HEAD
+          %td.span2
+            %strong grhh                 
+          %td
+            %code git reset HEAD --hard
+        %tr
+          %td.span2
+            %strong gsr                  
+          %td
+            %code git svn rebase
+          %td.span2
+            %strong gsd                  
+          %td
+            %code git svn dcommit
+        %tr
+          %td.span2
+            %strong ggpull               
+          %td
+            %code git pull origin $(current_branch)
+          %td.span2
+            %strong ggpush               
+          %td
+            %code git push origin $(current_branch)
+        %tr
+          %td.span2
+            %strong gdv                  
+          %td(colspan="3")
+            %code git diff -w "$@" | view -
+        %tr
+          %td.span2
+            %strong ggpnp                
+          %td(colspan="3")
+            %code git pull origin $(current_branch) && git push origin $(current_branch)
+        %tr
+          %td
+            %strong git-svn-dcommit-push 
+          %td(colspan="3")
+            %code git svn dcommit && git push github master:svntrunk
+        %tr
+          %td.span2
+            %strong gpa                  
+          %td(colspan="3")
+            %code git add .; git commit -m "$1"; git push; # only in the ocodo fork.

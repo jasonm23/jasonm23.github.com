@@ -1,0 +1,35 @@
+
+digraph "Rails Ajax forms" {
+
+graph[bgcolor="transparent", margin="0.5"]
+node[fontname="Helvetica Neue Light", fontsize=13]
+node[shape="plaintext", fontcolor="#3377aa"]
+
+node[
+     fontcolor=black
+     style="rounded,filled"
+     shape="record"
+     ]
+
+node[fillcolor="#a0e8FF"]
+
+modal[label=< Modal partial,<br/>e.g. <b>_modal.haml</b> <br/> rendered to the main layout template: <b>application.html.haml</b> so it's available everywhere. We set some useful CSS selectors<br/>.modal-title<br/>.modal-body >]
+
+action[label="{Action| Rails Controller Actions\l\
+are responses to URLs\l\
+When calling a dialog,\l\
+we use 'remote' methods\l|\
+(e.g. /posts/new.js.)\l|\
+posts_controller\l\
+responds with new.js.haml\n|\
+So in there we need to populate the \l\
+}"]
+
+modal -> action
+
+action -> close
+
+action -> confirm
+
+
+}
