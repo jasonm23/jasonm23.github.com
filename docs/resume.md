@@ -1,33 +1,41 @@
-Singapore - jasonm23@gmail.com - +65 8717 4344 - skype: jasonm23
+Singapore - [jasonm23@gmail.com](mailto:jasonm23@gmail.com) - +65 8717 4344 - skype: jasonm23
 
-### Online
+# Online
 
 * [Github: @jasonm23][jasonm23]
     - (+ [@emacsfodder][emacsfodder] [@ocodo][ocodo])
 * [Twitter: @ocodo][twitter-ocodo]
 * [Stack overflow profile: slomojo][slomojo]
 
-### Profile
+## Profile
 
-I'm a self-taught polygot software developer, throughout my career
-I've worked in many industries banking/finance, pharma, chemical,
-energy, security, gaming, media, advertising and entertainment.
+I'm a self-taught polygot software developer,
 
 My programming experience began at the age of 11 (in 1982), with the
 advent of the home microcomputer, and the Apple II.  I originally
-learnt BASIC, Z80 and 6502 assembly languages, copying code from
-magazines (do they still have those?), a few years later, Pascal, C,
-and in time many others.
+learnt BASIC, 6502 and z80 assembly languages, which began by copying
+code from magazines (do they still have those?), a couple of years
+later I learned rudimentary Pascal and C, and in time many others.
+
+My industry experience begin in 1987, where I worked in UK local
+government as a programming assistant, working with MVS & COBOL, APL,
+CICS on IBM System/370 mainframe, and DEC/VAX VMS, as well as IBM
+PCs/XTs and the brand new PS/2s ;)
 
 Over the years I have always aimed to enhance my skills and
 perspective, improve practices, and help people and companies improve
-and strengthen their software, and development ecosystems.
+and strengthen their software and development ecosystems. During my
+career I've worked in many industries banking/finance, pharma,
+chemical, energy, security, gaming, media, advertising and
+entertainment.  As a result I've gained a wide range of insights and
+cross-polinisations, of technologies, industry practices and human
+nature.
 
 I am an enthusiastic proponent of automated testing, TDD/BDD,
 continuous integration, static analysis, consistent maintainable code,
- agile development practices, and pair programming.
+agile development practices, and pair programming.
 
-### Experience
+## Experience
 
 ### CTO OpsManager 2013 - 2015
 
@@ -156,9 +164,9 @@ systems, in a range of technologies.
 
 (please contact me if you require information prior to 2000, I omit for brevity/relevance.)
 
-## Skills Sample
+# Skills Sample
 
-### Programming Languages and Tech Skills
+## Programming Languages and Tech Skills
 
 - OOP, SOLID, DRY, TDD/BDD
 
@@ -173,14 +181,14 @@ Emacs/EmacsLisp.
 
 - Issue Tracking Systems, PivotalTracker, Jira, Trac, Redmine, Bugzilla.
 
-### Management and Business Skills
+## Auxillary Business Skills
 
 People and project management (usually software developers),
 tech-lead, business analysis, training, mentoring, candidate
 selection/hiring/firing, profit/loss responsibility, marketing,
 graphic design.
 
-### Interests and Hobbies
+# Interests and Hobbies
 
 I spend much of my free time coding, making music, graphic art, or
 taking photos. The rest of my free time is spent travelling or just
@@ -194,4 +202,5 @@ Available on request.
 [ocodo]: https://github.com/ocodo
 [emacsfodder]: https://github.com/emacsfodder
 [jasonm23]: https://github.com/jasonm23
-[twitter-ocodo]: https://twitter.com/ocodo
+
+  * [twitter-ocodo]: https://twitter.com/ocodo
