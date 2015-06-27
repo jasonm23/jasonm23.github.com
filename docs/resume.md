@@ -1,7 +1,3 @@
-## Jason  Milkins
-
-### Software Developer / Consultant / CTO
-
 Singapore - jasonm23@gmail.com - +65 8717 4344 - skype: jasonm23
 
 ### Online
